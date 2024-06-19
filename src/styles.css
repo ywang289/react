@@ -1,0 +1,171 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+ 
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.InputBox1 {
+  width: 441px;
+  height: 48px;
+  margin-bottom: 10px; 
+  margin-left: 10px;
+  padding: 10px; 
+  box-sizing: border-box; 
+  border: 1px solid #151515; 
+  
+}
+
+
+
+
+.input-wrapper {
+  position: relative;
+}
+
+.InputBox2 {
+  width: 113px;
+  height: 48px;
+  margin-bottom: 10px; 
+  margin-left: 10px;
+  padding: 10px; 
+  box-sizing: border-box; 
+  border: 1px solid #151515; 
+  
+  cursor: pointer;
+}
+
+
+.InputBox1::placeholder,
+.InputBox2::placeholder {
+  color: #151515; 
+  opacity: 1;
+  font-size: 16px; 
+}
+.SearchResult {
+  width: 441px;
+  border: 1px solid #151515;
+  padding: 10px;
+  
+  margin-left: 10px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  position: absolute; 
+  top: 60px; 
+  z-index: 1; 
+}
+
+.RatingList{
+  position: absolute;
+  box-sizing: border-box;
+  border: solid #151515;
+  margin-left: 10px;
+  width: 239px;
+  height: 303px
+}
+
+.dropdown {
+  position: absolute;
+  box-sizing: border-box;
+  left: 10px;
+  width: 126px;
+  height: 151px;
+  
+  border: 1px solid #151515;
+  
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+
+
+
+
+
+.movie {
+  margin-bottom: 10px;
+}
+
+.movie-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-title {
+  align-self: flex-start;
+}
+
+.movie-category {
+  align-self: flex-end;
+  font-weight: 300;
+  color: #aaa; 
+}
+
+
+
+
+.arrow {
+  position: absolute;
+  right: 5px;
+  transform: translateX(-0%) translateY(-50%);
+  top: 40%; 
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+}
+
+
+
+.star {
+  font-size: 15px;
+  color: black;
+  position: relative;
+  display: inline-block;
+}
+
+.star::before {
+  content: "★";
+  color: #ddd;
+  position: absolute;
+  left: 0;
+}
+
+.star.filled::before {
+  color: black;
+}
+
+.star.half::before {
+  background: linear-gradient(90deg, black 50%, #ddd 50%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.rating-item {
+  display: flex;
+  margin: 5px;
+  align-items: center;
+}
+
+.rating-item input {
+  margin-right: 10px;
+}
+
+.movie-rating {
+  margin-top: 1px;
+}
+
+.rating-item p {
+  
+  margin: 1px;
+  
+}
